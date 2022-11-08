@@ -1,0 +1,2 @@
+Juan,Hernandez,18,Me llamo Juan y me gusta saludar a otros,URL,Comer:Jugar:Dormir,0,0
+Adrian,Recinos,19,Hola soy de escuintla,URL2,Salir a Caminar:Ver las Estrellas,1,1
