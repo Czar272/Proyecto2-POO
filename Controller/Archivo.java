@@ -1,4 +1,4 @@
-package Proyecto2-POO.Controller;
+package Proyecto2;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
 
-import Proyecto2-POO.Model.Perfil;
+import Proyecto2.Model.Perfil;
 
 public class Archivo {
     private File file;
@@ -22,7 +22,7 @@ public class Archivo {
         try {
             // Dentro de un Try, se asigna file al archivo que se encuentra en el directorio
             // local
-            file = new File("Proyecto2-POO\\Archivos\\Datos.txt");
+            file = new File("Archivos\\Datos.txt");
             // Luego, FileReader y BufferedReader almacenan el archivo ya abierto
             fileReader = new FileReader(file);
             bufferedReader = new BufferedReader(fileReader);
@@ -40,7 +40,7 @@ public class Archivo {
         try {
             // Dentro de un Try, se intenta abrir el directorio donde se encuentra el
             // archivo localmente
-            fileWriter = new FileWriter("Proyecto2-POO\\Archivos\\Datos.txt");
+            fileWriter = new FileWriter("Archivos\\Datos.txt");
             // Print writer introduce el String contenido que tiene el ArrayList de perfiles
             // formateado
             // dentro del FileWriter
@@ -97,11 +97,13 @@ public class Archivo {
     }
 
     public String FormatCerrar(ArrayList<Perfil> ArPerfiles) {
-        // El formateo para cerrar el archivo requiere de un ArrayList de perfiles y lo convierte en
+        // El formateo para cerrar el archivo requiere de un ArrayList de perfiles y lo
+        // convierte en
         // un String, el cual se inicializa como texto.
         String texto = "";
         for (Perfil p : ArPerfiles) {
-            // Primero, se convierten todos los elementos del arraylist intereses en un mismo string
+            // Primero, se convierten todos los elementos del arraylist intereses en un
+            // mismo string
             // llamado intereses separados por :, este se reiniciará para cada perfil p
             String intereses = "";
             for (int i = 0; i < p.getIntereses().size(); i++) {
@@ -112,7 +114,8 @@ public class Archivo {
                     intereses = intereses + p.getIntereses().get(i);
                 }
             }
-            // Luego, al texto se le agrega cada atributo de p separado por coma y al final se agrega un \r
+            // Luego, al texto se le agrega cada atributo de p separado por coma y al final
+            // se agrega un \r
             // para separar por lineas cada perfil
             texto = texto + p.getNombre() + "," + p.getApellido() + "," + p.getEdad() + "," + p.getDescripcion() + ","
                     + p.getImagen() + "," + intereses + "," + p.getEstado() + "," + p.getEstadoUsuario() + "\r";
