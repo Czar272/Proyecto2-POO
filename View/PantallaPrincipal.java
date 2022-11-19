@@ -124,7 +124,7 @@ public class PantallaPrincipal extends JFrame {
         Titulo.setBounds(164, 200, 149, 14);
         contentPane.add(Titulo);
 
-        Imagen = new JButton("Imagen");
+        Imagen = new JButton("");
         Imagen.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 //

@@ -146,6 +146,18 @@ public class PantallaEdicion extends JFrame {
         Arperf.get(0).setEdad(FEdad.getText());
         Arperf.get(0).setDescripcion(FDescripcion.getText());
         try {
+            String temp = FIntereses.getText();
+            String[] spl = temp.split(",");
+            ArrayList<String> ar = new ArrayList<String>();
+            for (String st : spl) {
+                ar.add(st);
+            }
+            Arperf.get(0).setIntereses(ar);
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+
+        try {
             File f = new File(FImagen.getText());
             Arperf.get(0).setImagen(FImagen.getText());
         } catch (Exception e) {

@@ -1,6 +1,6 @@
-Juan Pablo,Solis,18,Hola quiero hacer amigos,C:\Users\march\OneDrive\Escritorio\perfil6.jpg,Comer:Jugar:Dormir,4,4
+Juan Pablo,Solis,18,Hola quiero hacer amigos,Archivos\Imagenes\perfil1.jpg,Comer:   Jugar:  Dormir,4,4
 Adrian,Recinos,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil2.jpg,Salir a Caminar:Ver peliculas,1,2
-Andrea, Perez,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil3.jpg,Leer:Estar con mi familia,1,1
-Esteban, Zambrano,20,busco encontrar nuevos amigos,Archivos\Imagenes\perfil4.jpg,Leer:Estar con mi familia,1,2
-Sofia, Garcia,21,hola estoy buscando nuevas amistades,Archivos\Imagenes\perfil5.jpg,Leer:Estar con mi familia,1,1
+Andrea, Perez,19,Soy la mejor en todo,Archivos\Imagenes\perfil3.jpg,Leer:Estar con mi familia,0,1
+Esteban, Zambrano,20,Me gusta ir al gimnasio,Archivos\Imagenes\perfil4.jpg,Leer:Estar con mi familia,1,2
+Sofia, Garcia,21,Hola estoy buscando nuevas amistades,Archivos\Imagenes\perfil5.jpg,Leer:Estar con mi familia,0,1
 
