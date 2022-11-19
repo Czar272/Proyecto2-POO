@@ -5,7 +5,7 @@ import Proyecto2.View.PantallaEdicion;
 
 public class ControllerPrincipal {
     int indexActual = 1;
-    private DatosActuales dat = new DatosActuales();
+    public DatosActuales dat = new DatosActuales();
     private Archivo ar = new Archivo();
 
     public int getIndexActual() {
@@ -43,7 +43,8 @@ public class ControllerPrincipal {
 
     public void abrirCalificados() {
         try {
-            PantallaCalificados frame = new PantallaCalificados();
+            PantallaCalificados frame = new PantallaCalificados(dat.ArPerfiles);
+            frame.Refresh();
             frame.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();

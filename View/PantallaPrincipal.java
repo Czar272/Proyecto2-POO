@@ -5,6 +5,9 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Proyecto2.Perfil;
+
 import javax.naming.ldap.Control;
 import javax.security.auth.RefreshFailedException;
 import javax.swing.JButton;
@@ -72,6 +75,7 @@ public class PantallaPrincipal extends JFrame {
         Rechazar = new JButton("Rechazar");
         Rechazar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                con.dat.ArPerfiles.get(con.getIndexActual()).setEstado(1);
             }
         });
         Rechazar.setBackground(Color.RED);
@@ -81,6 +85,7 @@ public class PantallaPrincipal extends JFrame {
         Aceptar = new JButton("Aceptar");
         Aceptar.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
+                con.dat.ArPerfiles.get(con.getIndexActual()).setEstado(2);
             }
         });
         Aceptar.setBackground(Color.GREEN);

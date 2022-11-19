@@ -101,6 +101,10 @@ public class PantallaVisualizar extends JFrame {
         Intereses = new JLabel("intereses aqui");
         Intereses.setBounds(75, 346, 203, 74);
         contentPane.add(Intereses);
+        if (perf.getEstado() == 4) {
+            Rechazar.setVisible(false);
+            Aceptar.setVisible(false);
+        }
     }
 
     public void Refresh() {
