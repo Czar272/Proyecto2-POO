@@ -1,3 +1,5 @@
 Juan,Hernandez,18,Me llamo Juan y quisiera conocer a más personas,Archivos\Imagenes\perfil1.jpg,Comer:Jugar:Dormir,0,0
 Adrian,Recinos,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil2.jpg,Salir a Caminar:Ver peliculas,1,1
 Andrea, Perez,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil3.jpg,Leer:Estar con mi familia,1,1
+Esteban, Zambrano,20,busco encontrar nuevos amigos,Archivos\Imagenes\perfil4.jpg,Leer:Estar con mi familia,1,1
+Sofia, Garcia,21,hola estoy buscando nuevas amistades,Archivos\Imagenes\perfil5.jpg,Leer:Estar con mi familia,1,1
