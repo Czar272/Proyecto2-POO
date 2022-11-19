@@ -1,2 +1,3 @@
-Juan,Hernandez,18,Me llamo Juan y me gusta saludar a otros,URL,Comer:Jugar:Dormir,0,0
-Adrian,Recinos,19,Hola soy de escuintla,URL2,Salir a Caminar:Ver las Estrellas,1,1
+Juan,Hernandez,18,Me llamo Juan y quisiera conocer a más personas,Archivos\Imagenes\perfil1.jpg,Comer:Jugar:Dormir,0,0
+Adrian,Recinos,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil2.jpg,Salir a Caminar:Ver peliculas,1,1
+Andrea, Perez,19,Si quieres un amigo fiel puedes contar conmigo,Archivos\Imagenes\perfil3.jpg,Leer:Estar con mi familia,1,1
