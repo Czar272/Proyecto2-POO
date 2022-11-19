@@ -101,12 +101,15 @@ public class PantallaPrincipal extends JFrame {
                 if (Configurar.getSelectedItem().equals("Ver Calificados")) {
                     // Se abrira la pestaña de calificados.
                     con.abrirCalificados();
+                    dispose();
                 } else if (Configurar.getSelectedItem().equals("Ver mi Perfil")) {
                     // Se abrira el perfil en el index 0 en el visualizador
                     con.miPerfil();
+                    dispose();
                 } else if (Configurar.getSelectedItem().equals("Configurar Perfil")) {
                     // Se abre la pantalla de edicion
                     con.abrirEdicion();
+                    dispose();
                 }
             }
         });

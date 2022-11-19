@@ -52,7 +52,8 @@ public class ControllerPrincipal {
 
     public void abrirEdicion() {
         try {
-            PantallaEdicion frame = new PantallaEdicion();
+            PantallaEdicion frame = new PantallaEdicion(dat.ArPerfiles);
+            frame.Refresh();
             frame.setVisible(true);
         } catch (Exception e) {
             e.printStackTrace();

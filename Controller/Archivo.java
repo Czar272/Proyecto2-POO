@@ -65,6 +65,7 @@ public class Archivo {
             // Dentro de un try, cada linea del archivo que no esté vacía se le asigna al
             // String Contenido
             // dentro de un ciclo
+
             while ((Contenido = bufferedReader.readLine()) != null) {
                 // Cada linea luego se separa por comas en una lista de Strings llamada Elemento
                 String[] Elemento = Contenido.split(",");
@@ -72,20 +73,24 @@ public class Archivo {
                 // : dentro del
                 // espacio 5 de la lista Elemento, por lo que se separan nuevamente en la lista
                 // ListIntereses
-                String[] ListIntereses = Elemento[5].split(":");
-                // Luego la lista de intereses es traducida de String[] a ArrayList<String> con
-                // un for
-                ArrayList<String> ArrayIntereses = new ArrayList<String>();
-                for (String st : ListIntereses) {
-                    ArrayIntereses.add(st);
+                System.out.println(Elemento.length);
+                if (Elemento.length == 8) {
+                    String[] ListIntereses = Elemento[5].split(":");
+                    // Luego la lista de intereses es traducida de String[] a ArrayList<String> con
+                    // un for
+                    ArrayList<String> ArrayIntereses = new ArrayList<String>();
+                    for (String st : ListIntereses) {
+                        ArrayIntereses.add(st);
+                    }
+                    // Se instancia el perfil Temp y en su constructor se agregan los elementos
+                    // previamente explicados
+                    temp = new Perfil(Elemento[0], Elemento[1], Elemento[2], Elemento[3], Elemento[4], ArrayIntereses,
+                            Integer.parseInt(Elemento[6]),
+                            Integer.parseInt(Elemento[7]));
+                    // Por ultimo, se agrega Temp al arraylist de perfiles que devolverá este método
+                    ar.add(temp);
                 }
-                // Se instancia el perfil Temp y en su constructor se agregan los elementos
-                // previamente explicados
-                temp = new Perfil(Elemento[0], Elemento[1], Elemento[2], Elemento[3], Elemento[4], ArrayIntereses,
-                        Integer.parseInt(Elemento[6]),
-                        Integer.parseInt(Elemento[7]));
-                // Por ultimo, se agrega Temp al arraylist de perfiles que devolverá este método
-                ar.add(temp);
+
             }
             // Catches requeridos por el Try
         } catch (NumberFormatException e) {
@@ -118,7 +123,7 @@ public class Archivo {
             // se agrega un \r
             // para separar por lineas cada perfil
             texto = texto + p.getNombre() + "," + p.getApellido() + "," + p.getEdad() + "," + p.getDescripcion() + ","
-                    + p.getImagen() + "," + intereses + "," + p.getEstado() + "," + p.getEstadoUsuario() + "\r";
+                    + p.getImagen() + "," + intereses + "," + p.getEstado() + "," + p.getEstadoUsuario() + "\n";
         }
         return texto;
     }

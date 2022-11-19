@@ -9,16 +9,6 @@ public class main {
         Archivo ar = new Archivo();
         ar.Leer();
         dat.ArPerfiles = ar.FormatAbrir();
-        // for (Perfil p : dat.ArPerfiles) {
-        // System.out.println(p.getNombre());
-        // System.out.println(p.getDescripcion());
-        // System.out.println("URL: " + p.getImagen());
-        // System.out.println("Intereses:");
-        // for (String st : p.getIntereses()) {
-        // System.out.println(" " + st);
-        // }
-        // System.out.println("");
-        // }
         try {
             PantallaPrincipal frame = new PantallaPrincipal();
             frame.Refresh();
